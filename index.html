@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Finder</title>
+</head>
+<body>
+<div>
+    <div id="header">
+        <h1> MOVIE FINDER </h1>
+        <h3> Find all your favourite movies at one place.</h3>
+    </div>
+    
+
+    <div class="search-bar">
+    <input type="text" placeholder="Search movies..." id="searchInput">
+    <button id="searchBtn">
+        <i class="fas fa-search"></i>
+    </button>
+</div>
+</div>
+<div id="moviesContainer"> 
+    
+    <!-- here goes the product/movie cards for the home page in which we will list the recent movies-->
+</div>
+
+
+
+<div class="pagination">
+    <button id="prevBtn">Previous</button>
+    <span id="pageNum">Page 1</span>
+    <button id="nextBtn">Next</button>
+</div>
+
+<div id="movieModal" class="modal hidden">
+    <div class="modal-content">
+        <button id="closeModal">✕</button>
+        <img id="modalPoster" src="" alt="">
+        <div class="modal-info">
+            <h2 id="modalTitle"></h2>
+            <p id="modalRating">⭐</p>
+            <p id="modalOverview"></p>
+            <p id="modalRelease"></p>
+        </div>
+    </div>
+</div>
+<script src="script.js"> </script>
+</body>
+</html>
